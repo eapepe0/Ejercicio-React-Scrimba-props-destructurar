@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh; /* como minimo ocupa todo el ancho */
+  display: flex;
+  align-items: center; /* alinea eje Y*/
+  font-family: "Inter", sans-serif;
+  background-color: whitesmoke;
+}
+
+.contacts {
+  /* contenedor */
+  display: flex;
+  justify-content: center; /* alinea eje X */
+  flex-wrap: wrap; /* si no entra en el contenedor salta a otra linea */
+  gap: 40px; /* espacio entre los items */
+}
+
+.contact-card {
+  /* cada tarjeta */
+  flex-basis: 225px; /* el contenedor tiene de tamaño */
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25); /* sombra */
+  border-radius: 10px; /* borde redondeado */
+  display: flex; /* flex */
+  flex-direction: column; /* el contenido se muestra como columna */
+  padding: 13px; /* relleno para los costados de 13px */
+  padding-bottom: 20px; /* mas relleno para abajo */
+  background-color: white;
+}
+
+.contact-card > img {
+  /* imagen en la tarjeta */
+  width: 100%; /* imagen ocupa todo el contenedor */
+  height: auto; /* el alto automatico */
+  align-self: center; /* al ser un flex-item  alineamos al centro */
+  border-radius: 5px; /* redondeamos la imagen */
+  object-fit: cover; /* ocupa todo la imagen */
+}
+
+.contact-card > h3 {
+  /* titulo */
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.info-group {
+  /* datos contenedor*/
+  display: flex;
+  align-items: center; /* alineamos todo al centro */
+}
+
+.info-group > img {
+  /* iconos */
+  height: 11px; /* achicamos los iconos */
+  margin-right: 8px; /* los despegamos de el parrafo */
+}
+
+.info-group > p {
+  /* datos textos */
+  margin-block: 3px;
+  font-size: 12px;
+  color: #2b283a;
+}

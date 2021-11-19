@@ -1,2 +1,2 @@
-# Ejercicio-React-Scrimba-props-destructurar
+# Ejercicio-React-Scrimba-props
 Created with CodeSandbox
